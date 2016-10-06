@@ -5,4 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name ="white">#FFFFFF</color>
     <color name = "vk_button_color">#427BB0</color>
+    <color name = "after_number_text_color">#8a8a8a</color>
+    <color name = "number_color">#7F7F7F</color>
 </resources>

@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setSubtitle("online");
-        actionBar.setTitle("Anton Ihnatovich");
+        actionBar.setTitle("Антон Игнатович");
 
     }
 }

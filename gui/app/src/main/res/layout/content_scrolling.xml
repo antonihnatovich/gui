@@ -9,12 +9,16 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.l.gui.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
     <LinearLayout
+        android:id="@+id/head_main"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        android:background="#ffffff"
-
         >
 
         <Button
@@ -41,10 +45,208 @@
             android:textStyle="normal"
             android:textSize="@dimen/text_size_button"
             android:textAllCaps="false"
-
-
             android:id="@+id/vk_send"/>
     </LinearLayout>
-    
+
+    <LinearLayout
+        android:id="@+id/first_line_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/head_main">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_people_24dp"
+            />
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_count_friends"
+            android:text="106"
+            android:textColor="@color/number_color"
+            android:textSize="@dimen/number_size_value"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="друзей"
+            android:textColor="@color/after_number_text_color"
+            android:textSize="@dimen/text_size_textview"
+            android:id="@+id/friend_text"/>
+
+        <ImageView
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="11dp"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:background="@drawable/ic_separator_6sp"/>
+
+        <TextView
+            android:layout_marginLeft = "4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_same_friends"
+            android:text="0"
+            android:textSize="@dimen/number_size_value"
+            android:textColor="@color/number_color"/>
+
+        <TextView
+            android:layout_marginLeft="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="общих"
+            android:textColor="@color/after_number_text_color"
+            android:textSize="@dimen/text_size_textview"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/second_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/first_line_text">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_visibility_24dp"
+                />
+
+            <TextView
+                android:layout_marginLeft="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_followers"
+                android:text="100"
+                android:textColor="@color/number_color"
+                android:textSize="@dimen/number_size_value"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="подписчиков"
+                android:textColor="@color/after_number_text_color"
+                android:textSize="@dimen/text_size_textview"
+                android:id="@+id/followers"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/third_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/second_line_text">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_home_24dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="13dp"
+                android:text="Город:"
+                android:textColor="@color/after_number_text_color"
+                android:textSize="@dimen/text_size_textview"
+                android:id="@+id/city"/>
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_city_name"
+                android:text="Гродно"
+                android:textColor="@color/number_color"
+                android:textSize="@dimen/text_size_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourth_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/third_line_text"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_more_horiz_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_textview"
+                android:textColor="@color/vk_button_color"
+                android:text="@string/view_more_information"
+                android:layout_marginLeft="13dp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifth_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:orientation="horizontal"
+            android:background="#E2E2E2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/fourth_line_text">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/six_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/fifth_line_text">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FF000000"
+                android:textSize="@dimen/text_size_textview"
+                android:text="Фотографии"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="@dimen/number_size_value"
+                android:textColor="@color/after_number_text_color"
+                android:text="6"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
 
 </android.support.v4.widget.NestedScrollView>

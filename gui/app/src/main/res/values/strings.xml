@@ -94,4 +94,5 @@
     <string name="online_str">online</string>
     <string name="add_friend_text">Добавить в друзья</string>
     <string name="to_message_text">Сообщение</string>
+    <string name="view_more_information">Подробная информация</string>
 </resources>

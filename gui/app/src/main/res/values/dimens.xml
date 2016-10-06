@@ -6,4 +6,6 @@
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="text_size_button">14sp</dimen>
+    <dimen name="number_size_value">17sp</dimen>
+    <dimen name="text_size_textview">15sp</dimen>
 </resources>
