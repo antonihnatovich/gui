@@ -246,6 +246,47 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/seven_line_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/six_line_text">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="0.3333"
+                android:scaleType="centerCrop"
+                android:src="@drawable/first_pic"/>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="0.3333"
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_new"/>
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="170dp"
+                android:layout_weight="0.3333"
+                android:scaleType="centerCrop"
+                android:src="@drawable/third_pic"/>
+        </LinearLayout>
+
     </RelativeLayout>
 
 
