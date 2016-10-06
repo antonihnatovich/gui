@@ -35,9 +35,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 android:layout_marginBottom="10dp"
-                android:layout_gravity="bottom|right"
+
+                android:layout_gravity="top|right"
                 android:background="?attr/selectableItemBackground"
-                app:srcCompat="@drawable/ic_party_mode_24dp"/>
+                app:srcCompat="@drawable/ic_wallet_giftcard_24dp"/>
 
             <TextView
                 android:layout_marginBottom="10dp"
