@@ -10,4 +10,9 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="news_vk">Новости</string>
+    <string name="whats_new_string">Что у вас нового?</string>
+    <string name="coutry_name">Countrybals</string>
+    <string name="duration_string">3 минуты назад</string>
+    <string name="like_count">999</string>
 </resources>
