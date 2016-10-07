@@ -16,38 +16,39 @@
 
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/toolbar_layout"
-            app:expandedTitleTextAppearance="@style/CollapsedAppBar"
-            app:expandedTitleMarginStart="@dimen/activity_horizontal_margin"
-            android:textAlignment="textStart"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:fitsSystemWindows="true"
+            android:textAlignment="textStart"
             app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginStart="@dimen/activity_horizontal_margin"
+            app:expandedTitleTextAppearance="@style/CollapsedAppBar"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/avatar_new"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/avatar_new" />
+
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                android:layout_gravity="top|right"
                 android:layout_marginBottom="10dp"
 
-                android:layout_gravity="top|right"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
                 android:background="?attr/selectableItemBackground"
-                app:srcCompat="@drawable/ic_wallet_giftcard_24dp"/>
+                app:srcCompat="@drawable/ic_wallet_giftcard_24dp" />
 
             <TextView
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="@dimen/activity_horizontal_margin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="bottom"
-                android:text="@string/online_str"
-                android:drawableEnd="@drawable/ic_online_mobile"/>
+                android:layout_marginBottom="10dp"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:drawableEnd="@drawable/ic_online_mobile"
+                android:text="@string/online_str" />
 
             <android.support.v7.widget.Toolbar
 
@@ -55,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay"/>
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
 
 
         </android.support.design.widget.CollapsingToolbarLayout>

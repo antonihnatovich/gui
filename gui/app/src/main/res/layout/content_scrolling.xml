@@ -9,138 +9,136 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.l.gui.ScrollingActivity"
     tools:showIn="@layout/activity_scrolling">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/head_main"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        >
+        <LinearLayout
+            android:id="@+id/head_main"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_weight="0.5"
-            android:layout_width="0dp"
-            android:layout_margin="10dp"
+            <Button
+                android:id="@+id/vk_add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/vk_button_color"
+                android:text="@string/to_message_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_button"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/vk_send"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.5"
+                android:background="@color/vk_button_color"
+                android:text="@string/add_friend_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_button"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/first_line_text"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/vk_button_color"
-            android:text="@string/to_message_text"
-            android:textColor="@color/white"
-            android:textStyle="normal"
-            android:textSize="@dimen/text_size_button"
-            android:textAllCaps="false"
-            android:id="@+id/vk_add"/>
+            android:layout_below="@id/head_main"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:layout_margin="10dp"
-            android:layout_weight="0.5"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@color/vk_button_color"
-            android:text="@string/add_friend_text"
-            android:textColor="@color/white"
-            android:textStyle="normal"
-            android:textSize="@dimen/text_size_button"
-            android:textAllCaps="false"
-            android:id="@+id/vk_send"/>
-    </LinearLayout>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_people_24dp" />
 
-    <LinearLayout
-        android:id="@+id/first_line_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="10dp"
-        android:layout_below="@id/head_main">
+            <TextView
+                android:id="@+id/view_count_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:text="106"
+                android:textColor="@color/number_color"
+                android:textSize="@dimen/number_size_value" />
 
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:background="@drawable/ic_people_24dp"
-            />
+            <TextView
+                android:id="@+id/friend_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:text="друзей"
+                android:textColor="@color/after_number_text_color"
+                android:textSize="@dimen/text_size_textview" />
 
-        <TextView
-            android:layout_marginLeft="13dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/view_count_friends"
-            android:text="106"
-            android:textColor="@color/number_color"
-            android:textSize="@dimen/number_size_value"/>
+            <ImageView
+                android:layout_width="5dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/ic_separator_6sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="3dp"
-            android:text="друзей"
-            android:textColor="@color/after_number_text_color"
-            android:textSize="@dimen/text_size_textview"
-            android:id="@+id/friend_text"/>
+            <TextView
+                android:id="@+id/view_same_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="0"
+                android:textColor="@color/number_color"
+                android:textSize="@dimen/number_size_value" />
 
-        <ImageView
-            android:layout_marginLeft="4dp"
-            android:layout_marginTop="11dp"
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:background="@drawable/ic_separator_6sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="общих"
+                android:textColor="@color/after_number_text_color"
+                android:textSize="@dimen/text_size_textview" />
 
-        <TextView
-            android:layout_marginLeft = "4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/view_same_friends"
-            android:text="0"
-            android:textSize="@dimen/number_size_value"
-            android:textColor="@color/number_color"/>
-
-        <TextView
-            android:layout_marginLeft="4dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="общих"
-            android:textColor="@color/after_number_text_color"
-            android:textSize="@dimen/text_size_textview"/>
-
-    </LinearLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/second_line_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_below="@id/first_line_text"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/first_line_text">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_visibility_24dp"
-                />
+                android:background="@drawable/ic_visibility_24dp" />
 
             <TextView
-                android:layout_marginLeft="13dp"
+                android:id="@+id/view_followers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/view_followers"
+                android:layout_marginLeft="13dp"
                 android:text="100"
                 android:textColor="@color/number_color"
-                android:textSize="@dimen/number_size_value"/>
+                android:textSize="@dimen/number_size_value" />
 
             <TextView
+                android:id="@+id/followers"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="3dp"
                 android:text="подписчиков"
                 android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview"
-                android:id="@+id/followers"/>
+                android:textSize="@dimen/text_size_textview" />
 
         </LinearLayout>
 
@@ -148,37 +146,36 @@
             android:id="@+id/third_line_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_below="@id/second_line_text"
             android:layout_marginLeft="7dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/second_line_text">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:background="@drawable/ic_home_24dp"
-                />
+                android:background="@drawable/ic_home_24dp" />
 
             <TextView
+                android:id="@+id/city"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="13dp"
+                android:layout_marginTop="5dp"
                 android:text="Город:"
                 android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview"
-                android:id="@+id/city"/>
+                android:textSize="@dimen/text_size_textview" />
 
             <TextView
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="3dp"
+                android:id="@+id/view_city_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/view_city_name"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="5dp"
                 android:text="Гродно"
                 android:textColor="@color/number_color"
-                android:textSize="@dimen/text_size_textview"/>
+                android:textSize="@dimen/text_size_textview" />
 
         </LinearLayout>
 
@@ -186,25 +183,24 @@
             android:id="@+id/fourth_line_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_below="@id/third_line_text"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/third_line_text"
-            >
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_more_horiz_24dp"/>
+                android:background="@drawable/ic_more_horiz_24dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/text_size_textview"
-                android:textColor="@color/vk_button_color"
+                android:layout_marginLeft="13dp"
                 android:text="@string/view_more_information"
-                android:layout_marginLeft="13dp"/>
+                android:textColor="@color/vk_button_color"
+                android:textSize="@dimen/text_size_textview" />
 
 
         </LinearLayout>
@@ -213,36 +209,35 @@
             android:id="@+id/fifth_line_text"
             android:layout_width="match_parent"
             android:layout_height="7dp"
-            android:orientation="horizontal"
-            android:background="#E2E2E2"
+            android:layout_below="@id/fourth_line_text"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/fourth_line_text">
-        </LinearLayout>
+            android:background="#E2E2E2"
+            android:orientation="horizontal"></LinearLayout>
 
         <LinearLayout
             android:id="@+id/six_line_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_below="@id/fifth_line_text"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/fifth_line_text">
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Фотографии"
                 android:textColor="#FF000000"
-                android:textSize="@dimen/text_size_textview"
-                android:text="Фотографии"/>
+                android:textSize="@dimen/text_size_textview" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:textSize="@dimen/number_size_value"
+                android:text="6"
                 android:textColor="@color/after_number_text_color"
-                android:text="6"/>
+                android:textSize="@dimen/number_size_value" />
 
         </LinearLayout>
 
@@ -250,41 +245,42 @@
             android:id="@+id/seven_line_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_below="@id/six_line_text"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/six_line_text">
+            android:orientation="horizontal">
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="130dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/first_pic"/>
+                android:src="@drawable/first_pic" />
 
             <View
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
-                android:background="@color/white"/>
+                android:background="@color/white" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="130dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/avatar_new"/>
+                android:src="@drawable/avatar_new" />
+
             <View
                 android:layout_width="3dp"
                 android:layout_height="match_parent"
-                android:background="@color/white"/>
+                android:background="@color/white" />
 
             <ImageView
                 android:layout_width="0dp"
                 android:layout_height="170dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/third_pic"/>
+                android:src="@drawable/third_pic" />
         </LinearLayout>
 
     </RelativeLayout>
