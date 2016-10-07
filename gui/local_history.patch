@@ -1,0 +1,22 @@
+Index: app/src/main/java/com/l/gui/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/l/gui/MainActivity.java	(revision )
++++ app/src/main/java/com/l/gui/MainActivity.java	(revision )
+@@ -4,7 +4,6 @@
+ import android.support.v7.app.AppCompatActivity;
+ import android.os.Bundle;
+ import android.support.v7.widget.Toolbar;
+-import android.view.KeyEvent;
+ import android.view.Menu;
+ import android.view.MenuInflater;
+ import android.view.View;
+@@ -32,6 +31,5 @@
+         actionBar.setDisplayHomeAsUpEnabled(true);
+         actionBar.setSubtitle("online");
+         actionBar.setTitle("Антон Игнатович");
+-
+     }
+ }
