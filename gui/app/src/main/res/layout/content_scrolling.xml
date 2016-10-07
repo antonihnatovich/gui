@@ -23,29 +23,13 @@
 
             <Button
                 android:id="@+id/vk_add"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="0.5"
-                android:background="@color/vk_button_color"
-                android:text="@string/to_message_text"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text_size_button"
-                android:textStyle="normal" />
+                style="@style/vkLooksLikeButton"
+                android:text="@string/to_message_text" />
 
             <Button
+                style="@style/vkLooksLikeButton"
                 android:id="@+id/vk_send"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:layout_weight="0.5"
-                android:background="@color/vk_button_color"
-                android:text="@string/add_friend_text"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="@dimen/text_size_button"
-                android:textStyle="normal" />
+                android:text="@string/add_friend_text" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,57 +37,48 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/head_main"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginStart="7dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_people_24dp" />
+                style="@style/iconStyleMain"
+                android:src="@drawable/ic_people_24dp"
+                android:contentDescription="@string/string_res_to_image" />
 
             <TextView
+                style="@style/textViewMain"
                 android:id="@+id/view_count_friends"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
-                android:text="106"
+                android:layout_marginStart="13dp"
+                android:text="@string/friend_counter"
                 android:textColor="@color/number_color"
                 android:textSize="@dimen/number_size_value" />
 
             <TextView
+                style="@style/textViewMain"
                 android:id="@+id/friend_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:text="друзей"
-                android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview" />
+                android:layout_marginStart="3dp"
+                android:text="@string/friends_string" />
 
             <ImageView
-                android:layout_width="5dp"
-                android:layout_height="5dp"
-                android:layout_marginLeft="4dp"
+                style="@style/imageViewStyleCorrectFirstScreen"
+                android:layout_marginStart="4dp"
                 android:layout_marginTop="11dp"
-                android:background="@drawable/ic_separator_6sp" />
+                android:src="@drawable/ic_separator_6sp"
+                android:contentDescription="@string/string_res_to_image" />
 
             <TextView
                 android:id="@+id/view_same_friends"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:text="0"
+                style="@style/textViewMain"
+                android:layout_marginStart="4dp"
+                android:text="@string/same_friends_counter"
                 android:textColor="@color/number_color"
                 android:textSize="@dimen/number_size_value" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="4dp"
-                android:text="общих"
-                android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview" />
+                style="@style/textViewMain"
+                android:layout_marginStart="4dp"
+                android:text="@string/same_string" />
 
         </LinearLayout>
 
@@ -112,33 +87,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/first_line_text"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginStart="7dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_visibility_24dp" />
+                style="@style/iconStyleMain"
+                android:background="@drawable/ic_visibility_24dp"
+                android:contentDescription="@string/string_res_to_image" />
 
             <TextView
                 android:id="@+id/view_followers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
-                android:text="100"
+                style="@style/textViewMain"
+                android:layout_marginStart="13dp"
+                android:text="@string/followers_count"
                 android:textColor="@color/number_color"
                 android:textSize="@dimen/number_size_value" />
 
             <TextView
                 android:id="@+id/followers"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:text="подписчиков"
-                android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview" />
+                style="@style/textViewMain"
+                android:layout_marginStart="3dp"
+                android:text="@string/followers_string"/>
 
         </LinearLayout>
 
@@ -147,35 +117,29 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/second_line_text"
-            android:layout_marginLeft="7dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginStart="7dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:background="@drawable/ic_home_24dp" />
+                style="@style/iconStyleMain"
+                android:background="@drawable/ic_home_24dp"
+                android:contentDescription="@string/string_res_to_image" />
 
             <TextView
                 android:id="@+id/city"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
+                style="@style/textViewMain"
+                android:layout_marginStart="13dp"
                 android:layout_marginTop="5dp"
-                android:text="Город:"
-                android:textColor="@color/after_number_text_color"
-                android:textSize="@dimen/text_size_textview" />
+                android:text="@string/city_string"/>
 
             <TextView
                 android:id="@+id/view_city_name"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
+                style="@style/textViewMain"
+                android:layout_marginStart="3dp"
                 android:layout_marginTop="5dp"
-                android:text="Гродно"
-                android:textColor="@color/number_color"
-                android:textSize="@dimen/text_size_textview" />
+                android:text="@string/city_name"
+                android:textColor="@color/number_color"/>
 
         </LinearLayout>
 
@@ -190,17 +154,17 @@
             android:orientation="horizontal">
 
             <ImageView
+                style="@style/iconStyleMain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/ic_more_horiz_24dp" />
+                android:background="@drawable/ic_more_horiz_24dp"
+                android:contentDescription="@string/string_res_to_image" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="13dp"
+                style="@style/textViewMain"
+                android:layout_marginStart="13dp"
                 android:text="@string/view_more_information"
-                android:textColor="@color/vk_button_color"
-                android:textSize="@dimen/text_size_textview" />
+                android:textColor="@color/vk_button_color"/>
 
 
         </LinearLayout>
@@ -212,7 +176,7 @@
             android:layout_below="@id/fourth_line_text"
             android:layout_marginTop="10dp"
             android:background="#E2E2E2"
-            android:orientation="horizontal"></LinearLayout>
+            android:orientation="horizontal"/>
 
         <LinearLayout
             android:id="@+id/six_line_text"
@@ -225,18 +189,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Фотографии"
-                android:textColor="#FF000000"
-                android:textSize="@dimen/text_size_textview" />
+                style="@style/textViewMain"
+                android:text="@string/foto_string"
+                android:textColor="#FF000000" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:text="6"
-                android:textColor="@color/after_number_text_color"
+                style="@style/textViewMain"
+                android:layout_marginStart="5dp"
+                android:text="@string/foto_count"
                 android:textSize="@dimen/number_size_value" />
 
         </LinearLayout>
@@ -252,11 +212,13 @@
             android:orientation="horizontal">
 
             <ImageView
+                style="@style/imageViewStyleCorrectFirstScreen"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/first_pic" />
+                android:src="@drawable/first_pic"
+                android:contentDescription="@string/string_res_to_image" />
 
             <View
                 android:layout_width="3dp"
@@ -264,11 +226,13 @@
                 android:background="@color/white" />
 
             <ImageView
+                style="@style/imageViewStyleCorrectFirstScreen"
                 android:layout_width="0dp"
                 android:layout_height="130dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/avatar_new" />
+                android:src="@drawable/avatar_new"
+                android:contentDescription="@string/string_res_to_image" />
 
             <View
                 android:layout_width="3dp"
@@ -276,11 +240,13 @@
                 android:background="@color/white" />
 
             <ImageView
+                style="@style/imageViewStyleCorrectFirstScreen"
                 android:layout_width="0dp"
                 android:layout_height="170dp"
                 android:layout_weight="0.3333"
                 android:scaleType="centerCrop"
-                android:src="@drawable/third_pic" />
+                android:src="@drawable/third_pic"
+                android:contentDescription="@string/string_res_to_image" />
         </LinearLayout>
 
     </RelativeLayout>

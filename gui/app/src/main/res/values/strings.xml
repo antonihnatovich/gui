@@ -7,7 +7,6 @@
     <string name="to_message_text">Сообщение</string>
     <string name="view_more_information">Подробная информация</string>
     <string name="title_activity_navigation">NavigationActivity</string>
-
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="news_vk">Новости</string>
@@ -17,4 +16,14 @@
     <string name="like_count">999</string>
     <string name="comment_count">2</string>
     <string name="string_res_to_image">image description</string>
+    <string name="friend_counter">106</string>
+    <string name="friends_string">друзей</string>
+    <string name="same_friends_counter">0</string>
+    <string name="same_string">общих</string>
+    <string name="followers_count">100</string>
+    <string name="followers_string">подписчиков</string>
+    <string name="city_string">Город:</string>
+    <string name="city_name">Гродно</string>
+    <string name="foto_string">Фотографии</string>
+    <string name="foto_count">6</string>
 </resources>
