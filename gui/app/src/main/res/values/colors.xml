@@ -7,4 +7,6 @@
     <color name = "vk_button_color">#427BB0</color>
     <color name = "after_number_text_color">#8a8a8a</color>
     <color name = "number_color">#7F7F7F</color>
+    <color name="colorGreen">#27f703</color>
+    <color name="colorYellow">#f7d603</color>
 </resources>

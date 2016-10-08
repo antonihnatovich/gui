@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context="com.l.AdditionalActivity">
+
+    <com.l.gui.IcButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon = "@drawable/ic_wallet_giftcard_24dp"
+        app:rightIcon = "@drawable/ic_wallet_giftcard_24dp"
+        app:topIcon = "@drawable/ic_wallet_giftcard_24dp"
+        app:botIcon = "@drawable/ic_wallet_giftcard_24dp"
+        android:text="@string/wow_text"
+        />
+
+</RelativeLayout>

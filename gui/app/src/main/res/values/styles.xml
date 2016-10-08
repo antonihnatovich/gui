@@ -6,13 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="icButtonStyle">@style/MyYellowButton</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-
+    <style name="MyYellowButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/colorGreen</item>
+    </style>
     <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
 
         <item name="android:textSize">20sp</item>
