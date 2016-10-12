@@ -47,5 +47,17 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/icButton"
             />
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_text">
+
+
+                <TextView
+                    android:id="@+id/responseView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </ScrollView>
     </android.support.percent.PercentRelativeLayout>
 </RelativeLayout>
